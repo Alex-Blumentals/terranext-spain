@@ -58,18 +58,22 @@ export default function Slide17NextSteps() {
         {/* Contact CTA */}
         <div className="bg-terra-navy text-white rounded-xl p-10 text-center">
           <h2 className="text-3xl font-bold mb-6">¿Preguntas o Listo para Avanzar?</h2>
-          <div className="space-y-4 text-xl">
-            <div>
-              <p className="font-semibold mb-1">Contacto Principal:</p>
-              <p>[Nombre Contacto TerraNext]</p>
+          <div className="grid md:grid-cols-2 gap-8 text-xl max-w-4xl mx-auto">
+            <div className="bg-white/10 rounded-lg p-6">
+              <p className="font-semibold mb-3 text-terra-bright-green">Project Manager</p>
+              <p className="font-bold mb-4">Hector Crehuet</p>
+              <div className="space-y-2 text-lg">
+                <p>hector@terranext.co</p>
+                <p>+34 657 155 626</p>
+              </div>
             </div>
-            <div>
-              <p className="font-semibold mb-1">Email:</p>
-              <p className="text-terra-bright-green">[email@terranext.com]</p>
-            </div>
-            <div>
-              <p className="font-semibold mb-1">Teléfono:</p>
-              <p>[+34 XXX XXX XXX]</p>
+            <div className="bg-white/10 rounded-lg p-6">
+              <p className="font-semibold mb-3 text-terra-bright-green">CEO</p>
+              <p className="font-bold mb-4">Alex Blumentals</p>
+              <div className="space-y-2 text-lg">
+                <p>alex@terranext.co</p>
+                <p>+371 22 436 891</p>
+              </div>
             </div>
           </div>
         </div>
