@@ -5,16 +5,16 @@ export default function Slide10Deliverables() {
 
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
         {[
-          { num: 1, title: "Informe de Condiciones del Sitio", desc: "Mapas topográficos, zonas, drenaje" },
-          { num: 2, title: "Análisis de Suelos", desc: "20+ muestras, características físico-químicas" },
+          { num: 1, title: "Informe de Condiciones del Sitio", desc: "Mapas de zonas, drenaje, vegetación, topografía preliminar" },
+          { num: 2, title: "Análisis de Suelos Completo", desc: "30+ muestras, características físico-químicas por zona" },
           { num: 3, title: "Inventario de Biodiversidad", desc: "Flora, fauna, hábitats actuales" },
-          { num: 4, title: "Línea Base O&M", desc: "Costes actuales, benchmarks, oportunidades" },
-          { num: 5, title: "Diseño de Intervención Intensiva", desc: "Especies, densidades, calendario" },
-          { num: 6, title: "Diseño de Intervención Estándar", desc: "Alternativa moderada" },
-          { num: 7, title: "Análisis Económico Comparativo", desc: "Costes, ahorros, ROI, sensibilidad" },
-          { num: 8, title: "Plan de Mantenimiento", desc: "Actividades, recursos, KPIs" },
-          { num: 9, title: "Evaluación de Impacto Operacional", desc: "Eficiencia paneles, temperatura, agua" },
-          { num: 10, title: "Recomendación y Hoja de Ruta", desc: "Mejor camino forward con justificación" },
+          { num: 4, title: "Línea Base O&M", desc: "Costes actuales, índices productividad, benchmarks" },
+          { num: 5, title: "Modelo Hidrológico", desc: "Escorrentía, infiltración, gestión agua lluvia" },
+          { num: 6, title: "Escenarios de Plantación", desc: "Especies nativas apropiadas, densidades teóricas" },
+          { num: 7, title: "Análisis de Prácticas Animales", desc: "Posibilidades pastoreo, especies apropiadas, permisos" },
+          { num: 8, title: "Análisis Económico Comparativo", desc: "Costes estimados, ahorros, ROI, sensibilidad" },
+          { num: 9, title: "Evaluación de Impacto Operacional", desc: "Efecto en temperatura paneles, eficiencia" },
+          { num: 10, title: "Recomendación y Hoja de Ruta", desc: "Zonas prioritarias + camino hacia Fase 2" },
         ].map((doc) => (
           <div key={doc.num} className="phase-box border-terra-navy bg-white hover:bg-gray-50 transition-colors">
             <div className="flex items-start gap-4">
@@ -32,7 +32,7 @@ export default function Slide10Deliverables() {
 
       <div className="bg-green-50 border-2 border-terra-bright-green rounded-xl p-8 max-w-4xl mx-auto">
         <h3 className="text-2xl font-bold text-terra-bright-green mb-4 text-center">
-          📋 Formato de Entrega
+          Formato de Entrega
         </h3>
         <div className="grid md:grid-cols-2 gap-6 text-lg">
           <div>

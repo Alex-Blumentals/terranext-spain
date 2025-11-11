@@ -54,19 +54,19 @@ export default function Slide15Advantage() {
         {/* Examples */}
         <div className="bg-green-50 border-2 border-terra-bright-green rounded-xl p-8">
           <h3 className="text-2xl font-bold text-terra-bright-green mb-4">
-            💡 Ejemplos Reales
+            Ejemplos Reales
           </h3>
           <div className="space-y-4 text-lg">
             <div className="flex items-start gap-3">
-              <span className="text-2xl flex-shrink-0">✅</span>
+              <span className="text-2xl flex-shrink-0 font-bold text-terra-bright-green">•</span>
               <p><strong>Selección de especies:</strong> Fase 1 identifica exactamente qué especies prosperarán en cada zona → Fase 2 no desperdicia tiempo diseñando opciones inviables</p>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-2xl flex-shrink-0">✅</span>
+              <span className="text-2xl flex-shrink-0 font-bold text-terra-bright-green">•</span>
               <p><strong>Densidad óptima:</strong> Datos de suelo revelan capacidad real → Diseño Fase 2 ajustado desde inicio, no después de errores costosos</p>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-2xl flex-shrink-0">✅</span>
+              <span className="text-2xl flex-shrink-0 font-bold text-terra-bright-green">•</span>
               <p><strong>Gestión de agua:</strong> Fase 1 mapea microclimas → Fase 2 diseña riego diferenciado por zona, maximizando eficiencia</p>
             </div>
           </div>

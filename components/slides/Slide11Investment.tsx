@@ -8,8 +8,7 @@ export default function Slide11Investment() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Services */}
           <div className="phase-box border-terra-navy bg-white">
-            <h3 className="text-2xl font-bold text-terra-navy mb-6 flex items-center gap-3">
-              <span className="text-3xl">💼</span>
+            <h3 className="text-2xl font-bold text-terra-navy mb-6">
               Servicios Profesionales
             </h3>
             <div className="space-y-4">
@@ -34,8 +33,7 @@ export default function Slide11Investment() {
 
           {/* Expenses */}
           <div className="phase-box border-terra-blue bg-white">
-            <h3 className="text-2xl font-bold text-terra-navy mb-6 flex items-center gap-3">
-              <span className="text-3xl">📦</span>
+            <h3 className="text-2xl font-bold text-terra-navy mb-6">
               Gastos Directos
             </h3>
             <div className="space-y-4">
@@ -68,8 +66,7 @@ export default function Slide11Investment() {
 
         {/* Value callout */}
         <div className="bg-green-50 border-2 border-terra-bright-green rounded-xl p-6">
-          <h3 className="text-2xl font-bold text-terra-bright-green mb-3 flex items-center gap-2">
-            <span className="text-3xl">💰</span>
+          <h3 className="text-2xl font-bold text-terra-bright-green mb-3">
             Valor Generado
           </h3>
           <p className="text-lg">

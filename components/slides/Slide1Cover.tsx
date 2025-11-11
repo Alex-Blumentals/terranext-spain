@@ -13,7 +13,7 @@ export default function Slide1Cover() {
         </div>
         <div className="w-48 h-16 relative">
           <img
-            src="/logos/zelestra-logo.png"
+            src="/logos/zelestra-logo-dark.png"
             alt="Zelestra Logo"
             className="w-full h-full object-contain"
           />

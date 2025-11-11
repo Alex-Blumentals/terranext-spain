@@ -11,11 +11,11 @@ export default function Slide12Payment() {
               1
             </div>
             <div className="flex-1">
-              <h3 className="text-2xl font-bold text-terra-navy mb-2">🔹 HITO 1: FIRMA DE CONTRATO</h3>
+              <h3 className="text-2xl font-bold text-terra-navy mb-2">HITO 1: FIRMA DE CONTRATO</h3>
               <div className="space-y-2 text-lg">
-                <p><span className="font-semibold">📅 Timing:</span> Día 0</p>
-                <p><span className="font-semibold">💰 Pago:</span> <span className="text-3xl font-bold text-terra-blue">30% = €41.100</span></p>
-                <p><span className="font-semibold">📦 Entregable:</span> Recursos comprometidos, inicio de trabajo</p>
+                <p><span className="font-semibold">Timing:</span> Día 0</p>
+                <p><span className="font-semibold">Pago:</span> <span className="text-3xl font-bold text-terra-blue">30% = €41.100</span></p>
+                <p><span className="font-semibold">Entregable:</span> Recursos comprometidos, inicio de trabajo</p>
               </div>
             </div>
           </div>
@@ -32,11 +32,11 @@ export default function Slide12Payment() {
               2
             </div>
             <div className="flex-1">
-              <h3 className="text-2xl font-bold text-terra-navy mb-2">🔹 HITO 2: PRESENTACIÓN INICIAL</h3>
+              <h3 className="text-2xl font-bold text-terra-navy mb-2">HITO 2: PRESENTACIÓN INICIAL</h3>
               <div className="space-y-2 text-lg">
-                <p><span className="font-semibold">📅 Timing:</span> Semana 3</p>
-                <p><span className="font-semibold">💰 Pago:</span> <span className="text-3xl font-bold text-terra-caution">30% = €41.100</span></p>
-                <p><span className="font-semibold">📦 Entregable:</span> Hallazgos preliminares + decisión GO/NO-GO</p>
+                <p><span className="font-semibold">Timing:</span> Semana 3</p>
+                <p><span className="font-semibold">Pago:</span> <span className="text-3xl font-bold text-terra-caution">30% = €41.100</span></p>
+                <p><span className="font-semibold">Entregable:</span> Hallazgos preliminares + decisión GO/NO-GO</p>
               </div>
             </div>
           </div>
@@ -53,11 +53,11 @@ export default function Slide12Payment() {
               3
             </div>
             <div className="flex-1">
-              <h3 className="text-2xl font-bold text-terra-navy mb-2">🔹 HITO 3: DIAGNÓSTICO COMPLETO</h3>
+              <h3 className="text-2xl font-bold text-terra-navy mb-2">HITO 3: DIAGNÓSTICO COMPLETO</h3>
               <div className="space-y-2 text-lg">
-                <p><span className="font-semibold">📅 Timing:</span> Semana 10</p>
-                <p><span className="font-semibold">💰 Pago:</span> <span className="text-3xl font-bold text-terra-bright-green">40% = €54.800</span></p>
-                <p><span className="font-semibold">📦 Entregable:</span> 10 documentos + Recomendación + Presentación</p>
+                <p><span className="font-semibold">Timing:</span> Semana 10</p>
+                <p><span className="font-semibold">Pago:</span> <span className="text-3xl font-bold text-terra-bright-green">40% = €54.800</span></p>
+                <p><span className="font-semibold">Entregable:</span> 10 documentos + Recomendación + Presentación</p>
               </div>
             </div>
           </div>

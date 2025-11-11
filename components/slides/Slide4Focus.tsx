@@ -16,9 +16,8 @@ export default function Slide4Focus() {
         <div className="grid md:grid-cols-2 gap-6">
           {/* Step 1.1 */}
           <div className="phase-box border-terra-blue bg-white">
-            <div className="text-4xl mb-4">🔍</div>
             <h3 className="text-2xl font-bold text-terra-navy mb-3">Paso 1.1</h3>
-            <p className="text-xl mb-2"><strong>Trabajo de Campo</strong></p>
+            <p className="text-xl mb-2"><strong>Trabajo de Campo Preliminar</strong></p>
             <p className="text-lg text-terra-neutral mb-3">Semanas 1-3</p>
             <ul className="space-y-2 text-base">
               <li>• Análisis de sitio</li>
@@ -30,33 +29,30 @@ export default function Slide4Focus() {
 
           {/* Milestone */}
           <div className="phase-box border-terra-danger bg-red-50">
-            <div className="text-4xl mb-4">🔴</div>
             <h3 className="text-2xl font-bold text-terra-danger mb-3">Hito Clave</h3>
             <p className="text-xl mb-2"><strong>Revisión Semana 3</strong></p>
             <p className="text-lg text-terra-neutral mb-3">Punto de decisión</p>
             <p className="text-base">
-              ¿Es Pizarroso-I viable?<br/>
-              <strong className="text-terra-danger">GO / NO-GO</strong>
+              ¿Cuáles opciones de evaluación detallada y diseños podemos sugerir desde ahora?<br/>
+              <span className="text-sm italic mt-2 block">(ej. evitar el diseño sobre 100 ha, seleccionar puntos de comienzo ideales)</span>
             </p>
           </div>
 
           {/* Step 1.2 */}
           <div className="phase-box border-terra-bright-green bg-white">
-            <div className="text-4xl mb-4">📊</div>
             <h3 className="text-2xl font-bold text-terra-navy mb-3">Paso 1.2</h3>
             <p className="text-xl mb-2"><strong>Análisis Completo</strong></p>
             <p className="text-lg text-terra-neutral mb-3">Semanas 4-10</p>
             <ul className="space-y-2 text-base">
               <li>• Modelos detallados</li>
               <li>• Análisis económico</li>
-              <li>• Diseño conceptual</li>
+              <li>• Desarrollo de escenarios de intervención</li>
               <li>• Recomendaciones</li>
             </ul>
           </div>
 
           {/* Deliverable */}
           <div className="phase-box border-terra-bright-green bg-green-50">
-            <div className="text-4xl mb-4">📋</div>
             <h3 className="text-2xl font-bold text-terra-navy mb-3">Entrega Final</h3>
             <p className="text-xl mb-2"><strong>Diagnóstico Completo</strong></p>
             <p className="text-lg text-terra-neutral mb-3">Semana 10</p>

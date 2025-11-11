@@ -30,7 +30,7 @@ export default function Slide13Timeline() {
             <div className="col-span-1"></div>
             <div className="col-span-3"></div>
             <div className="col-span-1 bg-terra-danger text-white rounded px-2 py-2 text-center text-xs font-bold">
-              🔴 HITO
+              HITO
             </div>
             <div className="col-span-6"></div>
           </div>
@@ -62,7 +62,7 @@ export default function Slide13Timeline() {
             <div className="col-span-1"></div>
             <div className="col-span-9"></div>
             <div className="col-span-1 bg-terra-bright-green text-white rounded px-2 py-2 text-center text-xs font-bold">
-              ✅ FINAL
+              FINAL
             </div>
           </div>
         </div>
@@ -70,17 +70,14 @@ export default function Slide13Timeline() {
         {/* Key milestones summary */}
         <div className="grid md:grid-cols-3 gap-6 mt-12">
           <div className="phase-box border-terra-blue bg-blue-50 text-center">
-            <p className="text-4xl mb-2">📅</p>
             <p className="font-bold text-lg mb-1">Inicio</p>
             <p className="text-sm text-terra-neutral">Día 0 - Firma contrato</p>
           </div>
           <div className="phase-box border-terra-danger bg-red-50 text-center">
-            <p className="text-4xl mb-2">🔴</p>
             <p className="font-bold text-lg mb-1">Revisión</p>
             <p className="text-sm text-terra-neutral">Semana 3 - GO/NO-GO</p>
           </div>
           <div className="phase-box border-terra-bright-green bg-green-50 text-center">
-            <p className="text-4xl mb-2">✅</p>
             <p className="font-bold text-lg mb-1">Entrega</p>
             <p className="text-sm text-terra-neutral">Semana 10 - Completo</p>
           </div>

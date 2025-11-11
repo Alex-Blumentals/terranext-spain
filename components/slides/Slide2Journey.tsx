@@ -31,19 +31,19 @@ export default function Slide2Journey() {
         <h3 className="text-2xl font-bold text-terra-navy mb-4">¿Por qué Pizarroso-I?</h3>
         <ul className="space-y-3 text-lg">
           <li className="flex items-start gap-3">
-            <span className="text-2xl">✅</span>
+            <span className="text-2xl font-bold text-terra-bright-green">•</span>
             <span><strong>Tamaño óptimo:</strong> 100 hectáreas, 50MW - escala comercial perfecta</span>
           </li>
           <li className="flex items-start gap-3">
-            <span className="text-2xl">✅</span>
+            <span className="text-2xl font-bold text-terra-bright-green">•</span>
             <span><strong>Alto impacto:</strong> Clima semi-árido = mayor beneficio de regeneración</span>
           </li>
           <li className="flex items-start gap-3">
-            <span className="text-2xl">✅</span>
+            <span className="text-2xl font-bold text-terra-bright-green">•</span>
             <span><strong>Datos sólidos:</strong> Información base clara para análisis robusto</span>
           </li>
           <li className="flex items-start gap-3">
-            <span className="text-2xl">✅</span>
+            <span className="text-2xl font-bold text-terra-bright-green">•</span>
             <span><strong>Colaboración:</strong> Zelestra demuestra apertura a innovación</span>
           </li>
         </ul>

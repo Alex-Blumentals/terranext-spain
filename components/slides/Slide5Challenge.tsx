@@ -7,7 +7,7 @@ export default function Slide5Challenge() {
         {/* Left: Location Info */}
         <div className="space-y-6">
           <div className="bg-terra-navy text-white rounded-xl p-8">
-            <h2 className="text-3xl font-bold mb-6">📍 Ubicación</h2>
+            <h2 className="text-3xl font-bold mb-6">Ubicación</h2>
             <div className="space-y-3 text-lg">
               <p><strong>Coordenadas:</strong> 39.803°N, -6.346°W</p>
               <p><strong>Región:</strong> Cáceres, Extremadura</p>
@@ -17,7 +17,7 @@ export default function Slide5Challenge() {
           </div>
 
           <div className="bg-amber-50 border-2 border-terra-caution rounded-xl p-6">
-            <h3 className="text-2xl font-bold text-terra-caution mb-4">⚠️ Condición Clave</h3>
+            <h3 className="text-2xl font-bold text-terra-caution mb-4">Condición Clave</h3>
             <p className="text-xl mb-3">
               <strong>Precipitación anual:</strong>
             </p>
@@ -33,7 +33,7 @@ export default function Slide5Challenge() {
         {/* Right: Challenge = Opportunity */}
         <div className="space-y-6">
           <div className="bg-red-50 border-2 border-terra-danger rounded-xl p-8">
-            <h3 className="text-3xl font-bold text-terra-danger mb-4">🔥 Desafío</h3>
+            <h3 className="text-3xl font-bold text-terra-danger mb-4">Desafío</h3>
             <ul className="space-y-3 text-lg">
               <li>• Agua limitada</li>
               <li>• Suelos degradados</li>
@@ -46,18 +46,18 @@ export default function Slide5Challenge() {
           <div className="text-5xl text-center">↓ PERO ↓</div>
 
           <div className="bg-green-50 border-2 border-terra-bright-green rounded-xl p-8">
-            <h3 className="text-3xl font-bold text-terra-bright-green mb-4">💎 Oportunidad</h3>
+            <h3 className="text-3xl font-bold text-terra-bright-green mb-4">Oportunidad</h3>
             <ul className="space-y-3 text-lg">
               <li className="flex items-start gap-2">
-                <span className="text-2xl">✅</span>
+                <span className="text-2xl font-bold text-terra-bright-green">•</span>
                 <span><strong>Máximo impacto regenerativo</strong> - mayor margen de mejora</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-2xl">✅</span>
+                <span className="text-2xl font-bold text-terra-bright-green">•</span>
                 <span><strong>ROI más alto</strong> - cada mejora genera más valor</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-2xl">✅</span>
+                <span className="text-2xl font-bold text-terra-bright-green">•</span>
                 <span><strong>Aprendizaje valioso</strong> - replicable en otros sitios áridos</span>
               </li>
             </ul>

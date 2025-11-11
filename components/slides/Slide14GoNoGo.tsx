@@ -15,7 +15,7 @@ export default function Slide14GoNoGo() {
 
           {/* Decision Point */}
           <div className="bg-terra-danger text-white px-12 py-6 rounded-full text-3xl font-bold">
-            🔴 DECISIÓN GO/NO-GO
+            DECISIÓN GO/NO-GO
           </div>
 
           <div className="text-5xl">↓</div>
@@ -25,14 +25,12 @@ export default function Slide14GoNoGo() {
             {/* GO Branch */}
             <div className="space-y-4">
               <div className="bg-green-50 border-4 border-terra-bright-green rounded-xl p-6 text-center">
-                <p className="text-3xl mb-2">✅</p>
                 <h3 className="text-2xl font-bold text-terra-bright-green">PROCEDER</h3>
               </div>
 
               <div className="grid grid-cols-2 gap-4">
                 {/* Option A */}
                 <div className="phase-box border-terra-bright-green bg-white">
-                  <div className="text-4xl text-center mb-2">🌱</div>
                   <h4 className="text-3xl font-bold text-terra-navy text-center mb-2">A</h4>
                   <p className="font-bold text-center mb-3">Pilotos</p>
                   <div className="text-sm space-y-1">
@@ -44,7 +42,6 @@ export default function Slide14GoNoGo() {
 
                 {/* Option B */}
                 <div className="phase-box border-terra-blue bg-white">
-                  <div className="text-4xl text-center mb-2">🚀</div>
                   <h4 className="text-3xl font-bold text-terra-navy text-center mb-2">B</h4>
                   <p className="font-bold text-center mb-3">Escala</p>
                   <div className="text-sm space-y-1">
@@ -59,14 +56,12 @@ export default function Slide14GoNoGo() {
             {/* NO-GO Branch */}
             <div className="space-y-4">
               <div className="bg-gray-100 border-4 border-terra-neutral rounded-xl p-6 text-center">
-                <p className="text-3xl mb-2">❌</p>
                 <h3 className="text-2xl font-bold text-terra-neutral">NO PROCEDER</h3>
               </div>
 
               <div className="grid grid-cols-2 gap-4">
                 {/* Option C */}
                 <div className="phase-box border-terra-neutral bg-white">
-                  <div className="text-4xl text-center mb-2">⏸️</div>
                   <h4 className="text-3xl font-bold text-terra-navy text-center mb-2">C</h4>
                   <p className="font-bold text-center mb-3">Pausa</p>
                   <div className="text-sm space-y-1">
@@ -78,7 +73,6 @@ export default function Slide14GoNoGo() {
 
                 {/* Option D */}
                 <div className="phase-box border-terra-neutral bg-white">
-                  <div className="text-4xl text-center mb-2">🔄</div>
                   <h4 className="text-3xl font-bold text-terra-navy text-center mb-2">D</h4>
                   <p className="font-bold text-center mb-3">Sitio Alt.</p>
                   <div className="text-sm space-y-1">
@@ -95,7 +89,7 @@ export default function Slide14GoNoGo() {
         {/* Key message */}
         <div className="bg-blue-50 border-2 border-terra-blue rounded-xl p-8 mt-12">
           <h3 className="text-2xl font-bold text-terra-navy mb-4 text-center">
-            🔑 Zelestra Tiene Control Total
+            Zelestra Tiene Control Total
           </h3>
           <p className="text-lg text-center">
             Cuatro opciones válidas. Sin compromiso obligatorio.<br/>

@@ -20,7 +20,6 @@ import Slide12Payment from '@/components/slides/Slide12Payment';
 import Slide13Timeline from '@/components/slides/Slide13Timeline';
 import Slide14GoNoGo from '@/components/slides/Slide14GoNoGo';
 import Slide15Advantage from '@/components/slides/Slide15Advantage';
-import Slide16Incentive from '@/components/slides/Slide16Incentive';
 import Slide17NextSteps from '@/components/slides/Slide17NextSteps';
 
 const slides = [
@@ -39,7 +38,6 @@ const slides = [
   Slide13Timeline,
   Slide14GoNoGo,
   Slide15Advantage,
-  Slide16Incentive,
   Slide17NextSteps,
 ];
 
@@ -106,7 +104,7 @@ export default function Presentation() {
       </div>
 
       {/* Slide Content */}
-      <div className="flex-1 flex items-center justify-center p-8 md:p-12 lg:p-16">
+      <div className="flex-1 flex items-center justify-center p-8 md:p-12 lg:p-16 pb-32 md:pb-36">
         <div className="w-full max-w-7xl">
           <CurrentSlideComponent />
         </div>

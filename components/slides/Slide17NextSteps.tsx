@@ -77,7 +77,7 @@ export default function Slide17NextSteps() {
         {/* Summary box */}
         <div className="bg-green-50 border-2 border-terra-bright-green rounded-xl p-8">
           <h3 className="text-2xl font-bold text-terra-bright-green mb-4 text-center">
-            📊 Resumen de la Oportunidad
+            Resumen de la Oportunidad
           </h3>
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div>
