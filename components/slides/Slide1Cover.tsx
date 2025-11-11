@@ -1,24 +1,21 @@
-import Image from 'next/image';
-
 export default function Slide1Cover() {
   return (
     <div className="flex flex-col items-center justify-center min-h-[600px] text-center relative">
       {/* Logos */}
-      <div className="absolute top-0 left-0 right-0 flex justify-between items-center mb-12">
+      <div className="absolute top-0 left-0 right-0 flex justify-between items-center mb-12 px-8">
         <div className="w-48 h-16 relative">
-          <Image
+          <img
             src="/logos/TerraNextHorizontalWhite.svg"
             alt="TerraNext Logo"
-            fill
-            className="object-contain invert"
+            className="w-full h-full object-contain"
+            style={{ filter: 'invert(1)' }}
           />
         </div>
         <div className="w-48 h-16 relative">
-          <Image
+          <img
             src="/logos/zelestra-logo.png"
             alt="Zelestra Logo"
-            fill
-            className="object-contain"
+            className="w-full h-full object-contain"
           />
         </div>
       </div>
