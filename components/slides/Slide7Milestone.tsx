@@ -12,13 +12,15 @@ export default function Slide7Milestone() {
           </div>
 
           <div className="p-6 space-y-6">
-            {/* Placeholder for Google Earth image */}
-            <div className="bg-gray-100 border-2 border-dashed border-terra-neutral rounded-lg p-8 text-center">
-              <p className="text-terra-neutral italic">
-                [Imagen: Vista aérea de Pizarroso-I con zonificación superpuesta]
-              </p>
-              <p className="text-sm text-terra-neutral mt-2">
-                Propiedad elongada dividida en zonas estratégicas
+            {/* Aerial image of PV park */}
+            <div className="rounded-lg overflow-hidden border-2 border-terra-blue">
+              <img
+                src="/images/pizarroso-aerial.png"
+                alt="Vista aérea de Pizarroso-I - parque solar fotovoltaico"
+                className="w-full h-auto"
+              />
+              <p className="text-sm text-terra-neutral text-center py-2 bg-gray-50">
+                Vista aérea de Pizarroso-I - Propiedad de 100 ha dividida en zonas estratégicas
               </p>
             </div>
 
