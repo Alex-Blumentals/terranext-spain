@@ -1,77 +1,151 @@
-# TerraNext Spain Presentation
+# Presentación Zelestra Pizarroso-I
 
-Professional web presentation for TerraNext's Zelestra Pizarroso-I proposal.
+Presentación web para TerraNext - Programa de Gestión Regenerativa del Parque Fotovoltaico Pizarroso-I.
 
-## Features
+## 🎯 Proyecto
 
-- 17 interactive slides
-- Keyboard navigation (← →  Space)
-- Touch/swipe gestures
-- Progress indicator
-- Responsive design
-- TerraNext brand colors
-- Static export (no server required)
+**Cliente:** Zelestra Ingeniería
+**Ubicación:** Pizarroso-I, Cáceres, Extremadura (100 ha, 50 MWp)
+**Propuesta:** Fase 1 - Diagnóstico y Evaluación (€137k, 10 semanas)
 
-## Development
+## 🛠️ Tecnologías
+
+- **Reveal.js 5.0** - Framework de presentaciones HTML
+- **Vite** - Build tool y dev server
+- **CSS3** - Estilos personalizados con colores de marca TerraNext
+
+## 🎨 Colores de Marca
+
+- **Navy Deep:** #0D3B66 (títulos principales)
+- **Bright Green:** #79C048 (regeneración, éxito)
+- **Medium Blue:** #1767B3 (agua, tecnología)
+- **Charcoal:** #333333 (texto)
+
+## 🚀 Desarrollo Local
+
+### Instalación
 
 ```bash
 npm install
+```
+
+### Servidor de Desarrollo
+
+```bash
 npm run dev
 ```
 
-Visit http://localhost:3000
+Abre http://localhost:3000 en tu navegador.
 
-## Build
+### Build para Producción
 
 ```bash
 npm run build
 ```
 
-Static files will be generated in the `out/` directory.
+### Vista Previa del Build
 
-## Deployment
-
-This project is configured for static export and can be deployed to:
-- Vercel
-- Netlify
-- GitHub Pages
-- Any static hosting
-
-## Navigation
-
-- **Arrow Keys**: ← Previous slide, → Next slide
-- **Spacebar**: Next slide
-- **Touch/Swipe**: Swipe left/right on mobile
-- **Buttons**: Click navigation buttons at bottom
-
-## Project Structure
-
-```
-terranext-spain/
-├── app/
-│   ├── layout.tsx       # Root layout
-│   ├── page.tsx         # Main presentation component
-│   └── globals.css      # Global styles
-├── components/
-│   └── slides/          # Individual slide components
-│       ├── Slide1Cover.tsx
-│       ├── Slide2Journey.tsx
-│       └── ... (17 slides total)
-├── public/
-│   └── logos/           # TerraNext & Zelestra logos
-└── package.json
+```bash
+npm run preview
 ```
 
-## Customization
+## 📖 Navegación de la Presentación
 
-To update content:
-1. Edit individual slide files in `components/slides/`
-2. Rebuild with `npm run build`
+- **Flechas ←/→:** Navegar entre slides
+- **Espacio:** Siguiente slide
+- **Esc:** Vista general
+- **F:** Pantalla completa
+- **S:** Notas del presentador (si disponibles)
+- **?:** Ayuda de teclado
 
-To update styling:
-1. Edit `tailwind.config.ts` for colors
-2. Edit `app/globals.css` for global styles
+## 🖨️ Exportar a PDF
 
-## License
+1. Añade `?print-pdf` a la URL: `http://localhost:3000/?print-pdf`
+2. Abre el diálogo de impresión del navegador (Ctrl/Cmd + P)
+3. Selecciona "Guardar como PDF"
+4. Configura:
+   - Márgenes: Ninguno
+   - Gráficos de fondo: Activado
 
-© 2025 TerraNext. All rights reserved.
+## 📱 Características
+
+✅ **Responsive Design** - Adaptado para desktop, tablet y móvil
+✅ **Brand Colors** - Colores oficiales de TerraNext
+✅ **10 Slides Principales** - Contenido completo de la propuesta
+✅ **Navegación Táctil** - Soporte para dispositivos touch
+✅ **Print-Friendly** - Exportación a PDF optimizada
+✅ **Keyboard Navigation** - Control completo por teclado
+
+## 📂 Estructura del Proyecto
+
+```
+presentation/
+├── index.html           # Presentación principal
+├── main.js             # Inicialización Reveal.js
+├── package.json        # Dependencias
+├── vite.config.js      # Configuración Vite
+├── vercel.json         # Configuración Vercel
+├── assets/             # Imágenes y recursos
+│   └── TerraNextHorizontal.svg
+└── styles/             # Estilos personalizados
+    └── custom-theme.css
+```
+
+## 🌐 Despliegue en Vercel
+
+### Dominio Custom
+
+Configurado para: **presentacion.terranext.co**
+
+### Variables de Entorno
+
+No se requieren variables de entorno para este proyecto.
+
+### Configuración de Dominio
+
+1. En el dashboard de Vercel:
+   - Ve a Settings → Domains
+   - Añade: `presentacion.terranext.co`
+
+2. En tu proveedor DNS (TerraNext):
+   - Tipo: CNAME
+   - Nombre: presentacio
+   - Valor: cname.vercel-dns.com
+
+## 📄 Contenido de los Slides
+
+1. **Portada** - Información del proyecto
+2. **Marco Regulatorio** - Compliance y permisos
+3. **Visión Completa** - ROI de €2-5M en 25 años
+4. **Estructura Fase 1** - 3 flujos de trabajo paralelos
+5. **Semanas 1-3** - 3 visitas esenciales
+6. **Hito Semana 3** - Selección de áreas prioritarias
+7. **Semanas 4-10** - Análisis profundo
+8. **Inversión y Entregables** - €137k transparente
+9. **Decisión GO/NO-GO** - 4 opciones posibles
+10. **Próximos Pasos** - Cómo proceder
+
+## 🔧 Mantenimiento
+
+### Actualizar Contenido
+
+Edita `index.html` - cada `<section>` es un slide.
+
+### Cambiar Colores
+
+Edita `styles/custom-theme.css` - variables CSS en `:root`.
+
+### Actualizar Logo
+
+Reemplaza el archivo en `assets/TerraNextHorizontal.svg`.
+
+## 📞 Contacto
+
+**TerraNext SIA**
+Alex Blumentals, CEO
+Email: alex@terranext.co
+Teléfono: +371 22436891
+
+---
+
+*"Transformando parques solares en ecosistemas regenerativos"*

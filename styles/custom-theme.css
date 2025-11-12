@@ -1,0 +1,800 @@
+/**
+ * TerraNext Custom Theme for Reveal.js
+ * Zelestra Pizarroso-I Presentation
+ * Brand colors and styling
+ */
+
+/* ============================================
+   BRAND COLORS
+   ============================================ */
+:root {
+    /* Primary Brand Colors */
+    --navy-deep: #0D3B66;
+    --teal-blue: #0B4F6C;
+    --medium-blue: #1767B3;
+    --bright-blue: #3778CB;
+    --medium-green: #64A03B;
+    --bright-green: #79C048;
+    --charcoal: #333333;
+
+    /* Background Colors */
+    --bg-white: #FFFFFF;
+    --bg-cream: #FAFAF5;
+    --bg-light-green: #F0F8F0;
+    --bg-light-blue: #F0F5FA;
+    --bg-light-grey: #F5F5F5;
+
+    /* Functional Colors */
+    --color-success: #79C048;
+    --color-caution: #E6A800;
+    --color-decision: #DC2626;
+    --color-neutral: #6B7280;
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+.reveal {
+    font-family: 'Calibri', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--charcoal);
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    font-family: 'Calibri', 'Arial', sans-serif;
+    font-weight: bold;
+    color: var(--navy-deep);
+    margin-bottom: 1em;
+}
+
+.reveal h1 {
+    font-size: 2.2em;
+    line-height: 1.2;
+}
+
+.reveal h2 {
+    font-size: 1.8em;
+    line-height: 1.3;
+}
+
+.reveal h3 {
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+.reveal h4 {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+.reveal h5 {
+    font-size: 1em;
+    margin-bottom: 0.3em;
+}
+
+.reveal section {
+    text-align: left;
+    padding: 20px;
+}
+
+.reveal .slides section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============================================
+   SLIDE HEADER
+   ============================================ */
+.slide-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.logo-left,
+.logo-right img {
+    height: 60px;
+    width: auto;
+}
+
+.zelestra-placeholder {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--medium-blue);
+}
+
+/* ============================================
+   TITLE SLIDE (SLIDE 1)
+   ============================================ */
+.main-title {
+    color: var(--navy-deep);
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    text-align: center;
+}
+
+.subtitle {
+    color: var(--medium-blue);
+    font-size: 1.8em;
+    font-weight: normal;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.slide-subtitle {
+    font-size: 1.2em;
+    color: var(--charcoal);
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.subtitle-small {
+    font-size: 1em;
+    font-weight: normal;
+    color: var(--medium-blue);
+    font-style: italic;
+    margin-top: -0.5em;
+    margin-bottom: 1.5em;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 2em;
+    font-size: 0.9em;
+}
+
+.info-item {
+    background: var(--bg-light-blue);
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid var(--medium-blue);
+}
+
+/* ============================================
+   PHASE FLOW (SLIDE 3)
+   ============================================ */
+.phase-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.phase-box {
+    background: linear-gradient(135deg, var(--bg-light-blue) 0%, var(--bg-white) 100%);
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid var(--medium-blue);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.phase-box h4 {
+    color: var(--navy-deep);
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+.phase-box p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.phase-3,
+.phase-4 {
+    background: linear-gradient(135deg, var(--bg-light-green) 0%, var(--bg-white) 100%);
+    border-color: var(--bright-green);
+}
+
+.decision-marker {
+    text-align: center;
+    color: var(--color-decision);
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.key-message {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--navy-deep);
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* ============================================
+   WORKFLOW GRID (SLIDE 4)
+   ============================================ */
+.workflow-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.workflow-box {
+    background: var(--bg-cream);
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid var(--medium-blue);
+}
+
+.workflow-box h4 {
+    font-size: 0.95em;
+    margin-bottom: 0.5em;
+    color: var(--navy-deep);
+}
+
+.workflow-box ul {
+    font-size: 0.75em;
+    line-height: 1.4;
+    padding-left: 20px;
+}
+
+.workflow-duration {
+    font-size: 0.8em;
+    font-style: italic;
+    color: var(--color-neutral);
+    margin-bottom: 10px;
+}
+
+.workflow-section {
+    margin-bottom: 15px;
+}
+
+.workflow-regulatory {
+    border-color: var(--medium-blue);
+}
+
+.workflow-field {
+    border-color: var(--bright-green);
+}
+
+.workflow-analysis {
+    border-color: var(--medium-blue);
+}
+
+.sync-point {
+    text-align: center;
+    font-weight: bold;
+    color: var(--navy-deep);
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+/* ============================================
+   VISITS GRID (SLIDE 5)
+   ============================================ */
+.visits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.visit-box {
+    background: var(--bg-light-blue);
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid var(--medium-blue);
+}
+
+.visit-title {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    color: var(--navy-deep);
+}
+
+.visit-duration {
+    font-size: 0.75em;
+    font-style: italic;
+    color: var(--color-neutral);
+    margin-bottom: 10px;
+}
+
+.visit-1 {
+    color: var(--medium-green);
+}
+
+.visit-2 {
+    color: var(--medium-blue);
+}
+
+.visit-3 {
+    color: var(--bright-blue);
+}
+
+/* ============================================
+   SELECTION FLOW (SLIDE 6)
+   ============================================ */
+.selection-flow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.flow-box {
+    background: var(--bg-light-blue);
+    padding: 15px 25px;
+    border-radius: 8px;
+    border: 2px solid var(--medium-blue);
+    width: 80%;
+    text-align: center;
+}
+
+.flow-arrow {
+    font-size: 2em;
+    color: var(--medium-blue);
+    margin: 10px 0;
+}
+
+.decision-table {
+    margin: 20px 0;
+}
+
+.decision-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85em;
+}
+
+.decision-table th {
+    background: var(--navy-deep);
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.decision-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.priority-high {
+    background: rgba(121, 192, 72, 0.1);
+    border-left: 4px solid var(--bright-green);
+}
+
+.priority-medium-high {
+    background: rgba(23, 103, 179, 0.1);
+    border-left: 4px solid var(--medium-blue);
+}
+
+.priority-medium {
+    background: rgba(230, 168, 0, 0.1);
+    border-left: 4px solid var(--color-caution);
+}
+
+.milestone-result {
+    background: var(--bg-light-green);
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid var(--bright-green);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.milestone-result p {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+/* ============================================
+   TWO COLUMN LAYOUT
+   ============================================ */
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.analysis-section,
+.engagement-box {
+    margin-bottom: 15px;
+}
+
+.analysis-section h5 {
+    font-size: 0.9em;
+    color: var(--navy-deep);
+    margin-bottom: 5px;
+}
+
+.engagement-box {
+    background: var(--bg-light-blue);
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 3px solid var(--medium-blue);
+}
+
+.engagement-box p {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* ============================================
+   INVESTMENT & DELIVERABLES (SLIDE 8)
+   ============================================ */
+.investment-table,
+.deliverables-table,
+.timeline-table {
+    width: 100%;
+    font-size: 0.9em;
+    border-collapse: collapse;
+}
+
+.investment-table td,
+.deliverables-table td,
+.timeline-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.investment-table .amount {
+    text-align: right;
+    font-weight: bold;
+    color: var(--medium-blue);
+}
+
+.investment-table .total-row {
+    background: var(--bg-light-blue);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.payment-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment-box {
+    background: var(--bg-light-blue);
+    padding: 12px;
+    border-radius: 5px;
+    border: 2px solid var(--medium-blue);
+    font-size: 0.85em;
+}
+
+.payment-box p {
+    margin: 3px 0;
+}
+
+.payment-arrow {
+    text-align: center;
+    color: var(--medium-blue);
+    font-weight: bold;
+}
+
+.deliverables-table tr:nth-child(even) {
+    background: var(--bg-cream);
+}
+
+.deliverables-table .highlight-row {
+    background: var(--bg-light-green);
+    font-weight: bold;
+}
+
+.deliverables-summary {
+    font-size: 0.8em;
+    font-style: italic;
+    color: var(--color-neutral);
+    margin-top: 10px;
+}
+
+/* ============================================
+   DECISION TREE (SLIDE 9)
+   ============================================ */
+.decision-tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tree-level {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.tree-node {
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.tree-start {
+    background: var(--bg-cream);
+    border: 2px solid var(--navy-deep);
+    color: var(--navy-deep);
+}
+
+.tree-decision {
+    background: #FEE;
+    border: 3px solid var(--color-decision);
+    color: var(--color-decision);
+}
+
+.tree-arrow {
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--navy-deep);
+    margin: 5px 0;
+}
+
+.tree-split {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    justify-content: center;
+}
+
+.tree-branch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.tree-go {
+    background: var(--bg-light-green);
+    border: 2px solid var(--bright-green);
+    color: var(--bright-green);
+}
+
+.tree-no-go {
+    background: var(--bg-light-grey);
+    border: 2px solid var(--color-neutral);
+    color: var(--color-neutral);
+}
+
+.tree-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.option-card {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid var(--color-neutral);
+    font-size: 0.75em;
+    flex: 1;
+    min-width: 140px;
+}
+
+.option-card h5 {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: var(--navy-deep);
+}
+
+.option-card p {
+    margin: 3px 0;
+}
+
+.option-details {
+    font-weight: bold;
+    color: var(--medium-blue);
+}
+
+.option-arrow {
+    text-align: center;
+    color: var(--color-neutral);
+}
+
+.option-a {
+    border-color: var(--bright-green);
+    border-width: 3px;
+    background: var(--bg-light-green);
+}
+
+.recommendation {
+    background: var(--bg-light-blue);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.recommendation p {
+    margin: 10px 0;
+}
+
+/* ============================================
+   NEXT STEPS (SLIDE 10)
+   ============================================ */
+.step-box {
+    background: var(--bg-cream);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid var(--medium-blue);
+    margin-bottom: 15px;
+}
+
+.step-box h5 {
+    font-size: 1em;
+    color: var(--navy-deep);
+    margin-bottom: 8px;
+}
+
+.timeline-table .highlight-row {
+    background: var(--bg-light-green);
+    font-weight: bold;
+}
+
+.contact-box {
+    background: var(--bg-light-blue);
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid var(--medium-blue);
+    margin-top: 20px;
+}
+
+.contact-box h4 {
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    margin: 5px 0;
+}
+
+.tagline {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: var(--bright-green);
+    font-style: italic;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.compact-list {
+    font-size: 0.85em;
+    line-height: 1.5;
+    padding-left: 20px;
+}
+
+.compact-list li {
+    margin: 5px 0;
+}
+
+.checkmark-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.checkmark-list li::before {
+    content: "✓ ";
+    color: var(--bright-green);
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.compact-table {
+    width: 100%;
+    font-size: 0.85em;
+    border-collapse: collapse;
+}
+
+.compact-table th {
+    background: var(--navy-deep);
+    color: white;
+    padding: 8px;
+    text-align: left;
+}
+
+.compact-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.text-green {
+    color: var(--bright-green);
+    font-weight: bold;
+}
+
+.text-blue {
+    color: var(--medium-blue);
+    font-weight: bold;
+}
+
+.callout {
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border-left: 4px solid;
+}
+
+.callout-blue {
+    background: var(--bg-light-blue);
+    border-color: var(--medium-blue);
+}
+
+.callout-green {
+    background: var(--bg-light-green);
+    border-color: var(--bright-green);
+}
+
+.icon {
+    font-size: 1.1em;
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+    .reveal {
+        font-size: 16px;
+    }
+
+    .reveal h1 {
+        font-size: 2em;
+    }
+
+    .reveal h2 {
+        font-size: 1.6em;
+    }
+
+    .reveal section {
+        page-break-after: always;
+    }
+
+    .phase-box,
+    .workflow-box,
+    .visit-box {
+        border: 1px solid #333;
+        box-shadow: none;
+    }
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media screen and (max-width: 768px) {
+    .two-column,
+    .workflow-grid,
+    .visits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tree-split,
+    .tree-options {
+        flex-direction: column;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reveal {
+        font-size: 16px;
+    }
+
+    .main-title {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 1.5em;
+    }
+}
