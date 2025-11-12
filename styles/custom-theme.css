@@ -941,6 +941,33 @@
 }
 
 /* ============================================
+   NAVIGATION CONTROLS - Fixed Positioning
+   ============================================ */
+.reveal .controls {
+    bottom: 40px !important;
+    right: 20px !important;
+}
+
+.reveal .slide-number {
+    bottom: 15px !important;
+    right: 15px !important;
+    font-size: 14px !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    padding: 8px 12px !important;
+    border-radius: 6px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+    color: var(--navy-deep) !important;
+    font-weight: 600 !important;
+}
+
+/* Hide PDF button in print mode */
+@media print {
+    #pdf-download-btn {
+        display: none !important;
+    }
+}
+
+/* ============================================
    ANIMATIONS
    ============================================ */
 @keyframes slideInUp {
@@ -995,69 +1022,281 @@
 }
 
 /* ============================================
-   RESPONSIVE DESIGN - Enhanced Mobile
+   RESPONSIVE DESIGN - Completely Redesigned Mobile
    ============================================ */
 @media screen and (max-width: 768px) {
+    /* Increase base font size for readability */
     .reveal {
-        font-size: 20px;
+        font-size: 22px !important;
     }
 
+    /* Stack all grids vertically */
     .two-column,
     .workflow-grid,
     .visits-grid {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 12px;
     }
 
     .tree-split,
     .tree-options {
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
     }
 
     .info-grid {
         grid-template-columns: 1fr;
+        gap: 12px;
     }
 
+    /* Better title sizes */
     .main-title {
-        font-size: 2.2em !important;
+        font-size: 2em !important;
+        line-height: 1.1 !important;
+        margin-bottom: 15px !important;
     }
 
     .subtitle {
-        font-size: 1.6em !important;
+        font-size: 1.5em !important;
+        margin-bottom: 12px !important;
+    }
+
+    .slide-subtitle {
+        font-size: 1em !important;
+        margin-bottom: 15px !important;
     }
 
     .reveal h2 {
-        font-size: 1.8em;
+        font-size: 1.6em;
+        margin-bottom: 15px;
     }
 
+    .reveal h3 {
+        font-size: 1.3em;
+    }
+
+    .reveal h4 {
+        font-size: 1.15em;
+    }
+
+    /* Reduce padding but keep readable */
     .reveal section {
-        padding: 20px 25px;
+        padding: 60px 20px 20px 20px !important;
     }
 
+    /* Compact boxes for mobile */
+    .phase-box,
+    .workflow-box,
+    .visit-box,
+    .step-box,
+    .option-card {
+        padding: 15px !important;
+        margin-bottom: 10px;
+        min-height: auto !important;
+        height: auto !important;
+    }
+
+    .phase-box h4,
+    .workflow-box h4 {
+        font-size: 1.05em !important;
+        margin-bottom: 8px !important;
+    }
+
+    .phase-box p,
+    .workflow-box ul,
+    .visit-box ul {
+        font-size: 0.9em !important;
+        line-height: 1.4 !important;
+    }
+
+    /* Compact lists */
+    .compact-list,
+    .workflow-box ul li {
+        font-size: 0.85em !important;
+        line-height: 1.4 !important;
+        margin: 5px 0 !important;
+    }
+
+    /* Tables more readable */
+    .compact-table,
+    .investment-table,
+    .deliverables-table,
+    .timeline-table {
+        font-size: 0.85em !important;
+    }
+
+    .compact-table th,
+    .compact-table td,
+    .investment-table td,
+    .deliverables-table td,
+    .timeline-table td {
+        padding: 8px 6px !important;
+    }
+
+    /* Adjust logos */
     .logo-left {
-        height: 65px;
+        height: 60px;
     }
 
     .logo-right img {
-        height: 40px;
+        height: 35px;
+    }
+
+    .slide-header {
+        padding: 10px 15px;
+    }
+
+    /* Make download button smaller and repositioned */
+    #pdf-download-btn {
+        bottom: 10px !important;
+        right: 10px !important;
+    }
+
+    #pdf-download-btn a {
+        padding: 10px 16px !important;
+        font-size: 14px !important;
+    }
+
+    #pdf-download-btn svg {
+        width: 16px !important;
+        height: 16px !important;
+    }
+
+    /* Mobile menu button */
+    #slide-nav-btn {
+        bottom: 10px !important;
+        left: 10px !important;
+        padding: 10px 16px !important;
+        font-size: 14px !important;
+    }
+
+    #slide-nav-btn svg {
+        width: 16px !important;
+        height: 16px !important;
+    }
+
+    /* Mobile slide nav panel */
+    #slide-nav-panel {
+        bottom: 60px !important;
+        left: 10px !important;
+        right: 10px !important;
+        min-width: auto !important;
+        max-width: calc(100vw - 20px) !important;
+        max-height: 60vh !important;
+        padding: 15px !important;
+    }
+
+    #slide-nav-panel h3 {
+        font-size: 16px !important;
+    }
+
+    #slide-nav-panel button {
+        font-size: 13px !important;
+        padding: 10px 12px !important;
+    }
+
+    /* Compact callouts */
+    .callout {
+        padding: 12px 15px !important;
+        margin: 12px 0 !important;
+    }
+
+    /* Compact key messages */
+    .key-message,
+    .milestone-result,
+    .recommendation {
+        padding: 15px !important;
+        font-size: 1em !important;
+        margin-top: 15px !important;
+    }
+
+    /* Reduce title spacing on first slide */
+    .main-title + .subtitle {
+        margin-top: -10px;
     }
 }
 
 @media screen and (max-width: 480px) {
+    /* Even larger base font for tiny screens */
     .reveal {
-        font-size: 18px;
+        font-size: 20px !important;
     }
 
     .main-title {
-        font-size: 1.8em !important;
+        font-size: 1.6em !important;
+        margin-bottom: 10px !important;
     }
 
     .subtitle {
-        font-size: 1.4em !important;
+        font-size: 1.3em !important;
+    }
+
+    .slide-subtitle {
+        font-size: 0.9em !important;
+    }
+
+    .reveal h2 {
+        font-size: 1.4em;
+    }
+
+    .reveal h3 {
+        font-size: 1.2em;
     }
 
     .reveal section {
-        padding: 15px 20px;
+        padding: 50px 15px 15px 15px !important;
+    }
+
+    /* Ultra-compact boxes */
+    .phase-box,
+    .workflow-box,
+    .visit-box {
+        padding: 12px !important;
+    }
+
+    .phase-box h4,
+    .workflow-box h4 {
+        font-size: 1em !important;
+    }
+
+    /* Very small logos for tiny screens */
+    .logo-left {
+        height: 50px;
+    }
+
+    .logo-right img {
+        height: 30px;
+    }
+
+    /* Hide button text on very small screens */
+    #pdf-download-btn a,
+    #slide-nav-btn {
+        padding: 10px !important;
+        font-size: 0 !important;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        gap: 0 !important;
+    }
+
+    #pdf-download-btn svg,
+    #slide-nav-btn svg {
+        margin: 0 !important;
+    }
+
+    /* Ultra compact slide nav panel */
+    #slide-nav-panel {
+        padding: 12px !important;
+        max-height: 50vh !important;
+    }
+
+    #slide-nav-panel h3 {
+        font-size: 14px !important;
+        margin-bottom: 10px !important;
+    }
+
+    #slide-nav-panel button {
+        font-size: 12px !important;
+        padding: 8px 10px !important;
     }
 }
