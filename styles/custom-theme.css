@@ -963,9 +963,19 @@
     font-weight: 600 !important;
 }
 
-/* Hide PDF button in print mode */
+/* Ensure buttons are visible by default */
+#pdf-download-btn,
+#slide-nav-btn {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Hide buttons in print mode */
 @media print {
-    #pdf-download-btn {
+    #pdf-download-btn,
+    #slide-nav-btn,
+    #slide-nav-panel {
         display: none !important;
     }
 }
