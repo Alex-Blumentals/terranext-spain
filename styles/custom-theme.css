@@ -148,13 +148,13 @@
 }
 
 .logo-left {
-    height: 70px;
+    height: 90px;
     width: auto;
     filter: drop-shadow(var(--shadow-sm));
 }
 
 .logo-right img {
-    height: 70px;
+    height: 50px;
     width: auto;
     filter: drop-shadow(var(--shadow-sm));
 }
@@ -1035,9 +1035,12 @@
         padding: 20px 25px;
     }
 
-    .logo-left,
+    .logo-left {
+        height: 65px;
+    }
+
     .logo-right img {
-        height: 50px;
+        height: 40px;
     }
 }
 
