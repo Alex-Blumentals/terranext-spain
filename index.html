@@ -653,46 +653,141 @@
             <!-- APPENDIX 3: BASELINE MAPPING -->
             <section>
                 <h2 style="color: #7F8C8D;">Anexo 3: Mapeo de Línea Base</h2>
-                <h3 class="subtitle-small">Información del Terreno Necesaria</h3>
+                <h3 class="subtitle-small">¿Cuánto Podemos Mejorar los Resultados?</h3>
 
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 30px;">
-                    <div style="padding: 20px; background: linear-gradient(135deg, #E3F2FD 0%, white 100%); border-radius: 12px; border: 3px solid #3778CB;">
-                        <h4 style="color: #0D3B66; margin: 0 0 15px 0;">Histórico del Sitio</h4>
-                        <ul style="font-size: 0.9em; line-height: 1.6; margin: 0;">
-                            <li>Uso previo (agrícola, ganadero, forestal)</li>
-                            <li>Modificaciones durante construcción</li>
-                            <li>Nivelación, drenajes, rellenos</li>
-                            <li>Fecha de puesta en marcha</li>
-                        </ul>
+                <div style="margin-top: 30px;">
+                    <!-- Current State Table -->
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="color: #0D3B66; margin: 0 0 15px 0;">Estado Actual (Línea Base a Validar)</h4>
+                        <table style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
+                            <thead>
+                                <tr style="background: linear-gradient(to right, #E74C3C 0%, #C0392B 100%); color: white;">
+                                    <th style="padding: 12px; text-align: left; border: 1px solid #C0392B; width: 40%;">Métrica</th>
+                                    <th style="padding: 12px; text-align: center; border: 1px solid #C0392B; width: 30%;">Valor Típico</th>
+                                    <th style="padding: 12px; text-align: left; border: 1px solid #C0392B; width: 30%;">Fuente de Dato</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="background: #FFEBEE;">
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: 700;">Costes O&M Anuales</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">€10-15k/MW</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-size: 0.85em;">Datos históricos Zelestra</td>
+                                </tr>
+                                <tr style="background: white;">
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: 700;">Temperatura Paneles (Verano)</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">60-70°C</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-size: 0.85em;">SCADA (si disponible)</td>
+                                </tr>
+                                <tr style="background: #FFEBEE;">
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: 700;">Ratio de Rendimiento (PR)</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">75-82%</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-size: 0.85em;">Datos de producción 24m</td>
+                                </tr>
+                                <tr style="background: white;">
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: 700;">Cobertura Vegetal</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">&lt;20%</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-size: 0.85em;">Observación campo</td>
+                                </tr>
+                                <tr style="background: #FFEBEE;">
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: 700;">Infiltración de Agua</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">Línea base</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd; font-size: 0.85em;">Pruebas campo (Fase 1)</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
 
-                    <div style="padding: 20px; background: linear-gradient(135deg, #E8F5E9 0%, white 100%); border-radius: 12px; border: 3px solid #79C048;">
-                        <h4 style="color: #0D3B66; margin: 0 0 15px 0;">Condiciones Actuales</h4>
-                        <ul style="font-size: 0.9em; line-height: 1.6; margin: 0;">
-                            <li>Problemas de erosión</li>
-                            <li>Áreas de encharcamiento</li>
-                            <li>Dificultades de acceso</li>
-                            <li>Gestión de vegetación actual</li>
-                        </ul>
+                    <!-- Improvement Potential -->
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="color: #0D3B66; margin: 0 0 15px 0;">Mejoras Potenciales con Regeneración</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <!-- Model A: Intensive -->
+                            <div style="padding: 20px; background: linear-gradient(135deg, #E8F5E9 0%, white 100%); border-radius: 12px; border: 3px solid #79C048;">
+                                <h5 style="color: #0D3B66; margin: 0 0 12px 0; text-align: center;">Modelo A - Intensivo</h5>
+                                <table style="width: 100%; font-size: 0.85em;">
+                                    <tr>
+                                        <td style="padding: 6px 0; font-weight: 600;">Reducción O&M:</td>
+                                        <td style="padding: 6px 0; text-align: right; color: #64A03B; font-weight: 700;">40-60%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 0; font-weight: 600;">Enfriamiento paneles:</td>
+                                        <td style="padding: 6px 0; text-align: right; color: #3778CB; font-weight: 700;">-4 a -6°C</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 0; font-weight: 600;">Cobertura vegetal:</td>
+                                        <td style="padding: 6px 0; text-align: right; color: #F39C12; font-weight: 700;">80-90%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 0; font-weight: 600;">Infiltración:</td>
+                                        <td style="padding: 6px 0; text-align: right; color: #9C27B0; font-weight: 700;">+80-120%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 0; font-weight: 600;">Biodiversidad:</td>
+                                        <td style="padding: 6px 0; text-align: right; color: #64A03B; font-weight: 700;">+40-60%</td>
+                                    </tr>
+                                </table>
+                                <div style="margin-top: 15px; padding: 10px; background: white; border-radius: 8px; text-align: center;">
+                                    <p style="margin: 0; font-weight: 700; font-size: 0.85em;">Inversión: €8.500/ha</p>
+                                    <p style="margin: 5px 0 0 0; font-size: 0.8em; color: #666;">TIR: 28-38% | Retorno: 2.5-4 años</p>
+                                </div>
+                            </div>
+
+                            <!-- Model B: Standard -->
+                            <div style="padding: 20px; background: linear-gradient(135deg, #E3F2FD 0%, white 100%); border-radius: 12px; border: 3px solid #3778CB;">
+                                <h5 style="color: #0D3B66; margin: 0 0 12px 0; text-align: center;">Modelo B - Estándar</h5>
+                                <table style="width: 100%; font-size: 0.85em;">
+                                    <tr>
+                                        <td style="padding: 6px 0; font-weight: 600;">Reducción O&M:</td>
+                                        <td style="padding: 6px 0; text-align: right; color: #64A03B; font-weight: 700;">30-40%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 0; font-weight: 600;">Enfriamiento paneles:</td>
+                                        <td style="padding: 6px 0; text-align: right; color: #3778CB; font-weight: 700;">-2 a -3°C</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 0; font-weight: 600;">Cobertura vegetal:</td>
+                                        <td style="padding: 6px 0; text-align: right; color: #F39C12; font-weight: 700;">60-70%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 0; font-weight: 600;">Infiltración:</td>
+                                        <td style="padding: 6px 0; text-align: right; color: #9C27B0; font-weight: 700;">+40-60%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 0; font-weight: 600;">Biodiversidad:</td>
+                                        <td style="padding: 6px 0; text-align: right; color: #64A03B; font-weight: 700;">+25-40%</td>
+                                    </tr>
+                                </table>
+                                <div style="margin-top: 15px; padding: 10px; background: white; border-radius: 8px; text-align: center;">
+                                    <p style="margin: 0; font-weight: 700; font-size: 0.85em;">Inversión: €5.250/ha</p>
+                                    <p style="margin: 5px 0 0 0; font-size: 0.8em; color: #666;">TIR: 25-45% | Retorno: 2-3 años</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- Key Questions -->
                     <div style="padding: 20px; background: linear-gradient(135deg, #FFF3E0 0%, white 100%); border-radius: 12px; border: 3px solid #F39C12;">
-                        <h4 style="color: #0D3B66; margin: 0 0 15px 0;">Datos Climáticos</h4>
-                        <ul style="font-size: 0.9em; line-height: 1.6; margin: 0;">
-                            <li>Estación meteorológica en sitio</li>
-                            <li>Lluvia, temperatura, viento</li>
-                            <li>Si no: datos AEMET Cáceres</li>
+                        <h4 style="color: #0D3B66; margin: 0 0 15px 0;">Preguntas Clave a Responder</h4>
+                        <ul style="font-size: 0.9em; line-height: 1.7; margin: 0; padding-left: 25px;">
+                            <li><strong>O&M:</strong> ¿Cuál es el desglose actual de costes? (vegetación, limpieza, correctivo)</li>
+                            <li><strong>Temperatura:</strong> ¿Tenemos datos SCADA de temperatura de paneles/inversores?</li>
+                            <li><strong>Producción:</strong> ¿Cuál es el PR actual y su tendencia últimos 24 meses?</li>
+                            <li><strong>Degradación:</strong> ¿Hay pérdidas medibles año a año?</li>
+                            <li><strong>Suelo:</strong> ¿Qué tan compactado está? ¿Hay erosión visible?</li>
                         </ul>
                     </div>
 
-                    <div style="padding: 20px; background: linear-gradient(135deg, #F3E5F5 0%, white 100%); border-radius: 12px; border: 3px solid #9C27B0;">
-                        <h4 style="color: #0D3B66; margin: 0 0 15px 0;">Infraestructura</h4>
-                        <ul style="font-size: 0.9em; line-height: 1.6; margin: 0;">
-                            <li>Caminos internos</li>
-                            <li>Cercas perimetrales</li>
-                            <li>Cableado subterráneo</li>
-                            <li>Subestaciones</li>
-                        </ul>
+                    <!-- Value Proposition -->
+                    <div style="margin-top: 20px; padding: 25px; background: linear-gradient(135deg, #64A03B 0%, #79C048 100%); border-radius: 12px; text-align: center; color: white; box-shadow: 0 4px 15px rgba(100, 160, 59, 0.3);">
+                        <p style="margin: 0; font-weight: 700; font-size: 1.15em;">
+                            Ahorro Potencial 100 ha (25 años)
+                        </p>
+                        <p style="margin: 10px 0 0 0; font-size: 1.3em; font-weight: 700;">
+                            €1.4M - €4.6M VAN
+                        </p>
+                        <p style="margin: 5px 0 0 0; font-size: 0.85em; opacity: 0.9;">
+                            (Depende de O&M actual y modelo implementado)
+                        </p>
                     </div>
                 </div>
             </section>
